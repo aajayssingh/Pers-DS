@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1495646183 source:/home/ajay/intern-ws/mytestCode/maptest/main.cpp
+	<iostream>
+	<map>
+
