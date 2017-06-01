@@ -36,7 +36,7 @@ typedef bool bool_t;
 typedef int lkey_t;
 typedef int  val_t;
 
-#define SINGLE_THREAD
+#define SINGLE_THREAD12
 
 
 #define elog(_message_)  do {fprintf(stderr,			        \
