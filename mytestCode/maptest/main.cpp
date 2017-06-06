@@ -1,7 +1,7 @@
 // multimap::equal_range
 #include <iostream>
 #include <map>
-
+#include <stdio.h>
 typedef intptr_t ajay_t;
 int main ()
 {
@@ -32,6 +32,19 @@ ajay_t aj = 0;
     //it++;
     std::cout << it->second<<'\n';
 //  }
+
+
+int d = 100;
+int* b = &d;
+unsigned long ulng= (unsigned long)b;
+printf("&d = %p\n", &d);
+printf("b = %p\n", b);
+printf("&b = %p\n", &b);
+printf("*b = %p\n", *b);
+
+printf("ulng = %p\n", ulng);
+
+
 
   return 0;
 }

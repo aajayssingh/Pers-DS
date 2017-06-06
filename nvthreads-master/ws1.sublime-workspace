@@ -1,0 +1,574 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"start",
+				"_start"
+			],
+			[
+				"aj",
+				"ajadd"
+			],
+			[
+				"_tra",
+				"_transientMemory"
+			],
+			[
+				"_tr",
+				"_transientMemory"
+			],
+			[
+				"MAP",
+				"MAP_FIXED"
+			],
+			[
+				"hash",
+				"hash_offset"
+			],
+			[
+				"print",
+				"printf\tprintf …"
+			],
+			[
+				"Ha",
+				"HASH_TAB_SIZE"
+			],
+			[
+				"no",
+				"node_count"
+			],
+			[
+				"val",
+				"val_t"
+			],
+			[
+				"list",
+				"list_t"
+			],
+			[
+				"node",
+				"node_count"
+			],
+			[
+				"nvrecover",
+				"nvrecover_aj"
+			],
+			[
+				"ptr_",
+				"ptr_list_head"
+			],
+			[
+				"recove",
+				"recoveredVarmapMulti"
+			],
+			[
+				"page",
+				"pageOffset"
+			],
+			[
+				"data",
+				"data1"
+			],
+			[
+				"ptr",
+				"ptrag"
+			],
+			[
+				"pt",
+				"ptraggr"
+			],
+			[
+				"N",
+				"NULL"
+			],
+			[
+				"touch",
+				"touch_size"
+			],
+			[
+				"as",
+				"ascii"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"ar",
+				"arr"
+			],
+			[
+				"new",
+				"list_new"
+			],
+			[
+				"lli",
+				"llist_t"
+			],
+			[
+				"node_",
+				"node_t"
+			],
+			[
+				"ll",
+				"llist_t"
+			],
+			[
+				"mem",
+				"memLogPath"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/ajay/intern-ws/nvthreads-master/src/source/libdthread.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/recover_int.c",
+		"/home/ajay/intern-ws/nvthreads-master-2/src/include/xheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/xheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/aj.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/xpersist.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/xmemory.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/xrun.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/nvrecovery.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/logger.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/warpheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/xadaptheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/xoneheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/objectheader.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/debug.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/source/real.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/xdefines.h",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/linkedlist.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/common.h",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/linkedlist.h",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/ll_test.c",
+		"/home/ajay/intern-ws/nvthreads-master/src/source/xmemory.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/Makefile",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/recover_hashtab.c",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/list.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/ansiwrapper.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/util/sllist.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/segheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/source/nvrecovery.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mutex/nested_locks.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mutex/dependence.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mutex/condvar.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/timertest/logger.h",
+		"/home/ajay/intern-ws/nvthreads-master/tests/timertest/logger.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/timertest/timertest.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/checkpages.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/empty.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/forloop.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/nocrtsection.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/readmemlog.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/test1.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/test2.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/mempages/test3.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/large_malloc/over4g.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/recover_aggr.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/recover_array.c",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/examples/singly_linked_list/SConscript",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/examples/simple/main.c",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/library/mtm/include/mtm.h",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/examples/SConscript",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/examples/singly_linked_list/singly_linked_list.hxx",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/examples/singly_linked_list/singly_linked_list.cxx",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/examples/singly_linked_list/main.cxx",
+		"/home/ajay/intern-ws/Mnemosyne-master/usermode/bench/openldap/openldap-2.3.35-mnemosyne/include/avl.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/perclassheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/internalheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/experimental/fifofreelist.h",
+		"/home/ajay/intern-ws/AlgorithmCollection-master/list/common.h",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/ll-test.c",
+		"/home/ajay/intern-ws/nvthreads-master/src/source/logger.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/linkedlist.cpp",
+		"/home/ajay/intern-ws/AlgorithmCollection-master/list/CoarseGrainedSynchroList.c",
+		"/home/ajay/intern-ws/AlgorithmCollection-master/list/CoarseGrainedSynchroList.h",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/recover_list.c",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/real.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/wrapper.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/traceheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/Makefile",
+		"/home/ajay/intern-ws/nvthreads-master/apps/kmeans/phoenix-recovery/kmeans-pthread.c",
+		"/home/ajay/intern-ws/mytestCode/pm1.c",
+		"/home/ajay/Downloads/nvml-master/src/include/libpmemobj/lists_atomic.h",
+		"/home/ajay/Downloads/nvml-master/src/include/libpmemobj/types.h",
+		"/home/ajay/Downloads/nvml-master/doc/libpmemobj.3.md",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/privateheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/adaptheap.h",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/adapt.h",
+		"/home/ajay/intern-ws/linux-examples-master/libpmemalloc/pmemalloc.c",
+		"/home/ajay/intern-ws/linux-examples-master/libpmemalloc/pmemalloc.h",
+		"/home/ajay/intern-ws/linux-examples-master/binarytree/tree.c",
+		"/home/ajay/intern-ws/nvthreads-master/tests/recover/recover_lstag.c",
+		"/home/ajay/intern-ws/nvthreads-master/apps/datagen/datagen.cpp",
+		"/home/ajay/intern-ws/nvthreads-master/apps/tokyocabinet-1.4.48/tcbmtsimple_nvthread.c",
+		"/home/ajay/intern-ws/nvthreads-master/apps/pagerank/singlethreaded/algorithm.c",
+		"/home/ajay/intern-ws/nvthreads-master/apps/pagerank/singlethreaded/main.c",
+		"/home/ajay/intern-ws/nvthreads-master/apps/kmeans/phoenix-recovery/eval_kmeans_recovery.py",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/determ.h",
+		"/home/ajay/intern-ws/nvthreads-master/tests/flush_test/flush_sync.c",
+		"/home/ajay/intern-ws/nvthreads-master/src/include/heaplayers/mmapheap.h",
+		"/home/ajay/Downloads/ConcLinkedList-master/src/linkedlist-lock/linkedlist.h",
+		"/home/ajay/Downloads/ConcLinkedList-master/src/linkedlist-lock/linkedlist.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/src/include/xmemory.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/src/include/xrun.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/src/source/libdthread.cpp",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/recover/recover_aggr.c",
+		"/home/ajay/Downloads/ConcLinkedList-master/src/linkedlist-lock/main.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/recover/recover_list.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/large_malloc/over4g.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/mempages/test1.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/mempages/test2.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/mempages/readmemlog.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/src/include/internalheap.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/recover/recover_int.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/recover/recover_array.c",
+		"/home/ajay/Downloads/ConcLinkedList-master/src/linkedlist/linkedlist.h",
+		"/home/ajay/Downloads/ConcLinkedList-master/src/linkedlist/main.c",
+		"/home/ajay/Downloads/ConcLinkedList-master/src/linkedlist/linkedlist.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/src/include/xpersist.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/src/include/nvrecovery.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/mempages/forloop.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/src/include/logger.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/mutex/nested_locks.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/mutex/condvar.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/mutex/dependence.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/nvm_emu/nvm_emu.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/config/nvthread.config",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/recover/callgrind.out.5803",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/apps/pagerank/singlethreaded/main.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/tests/mempages/test1.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/source/xthread.cpp",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/source/libdthread.cpp",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/include/xrun.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/include/xmemory.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/include/real.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/include/xdefines.h",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/source/xmemory.cpp",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/NVThreadCore/src/source/xrun.cpp",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/timertest/logger.c",
+		"/home/ajay/aj-workspace/internship-ws/code-ws/nvthreads-master/tests/timertest/timertest.c"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"",
+			"<open files>",
+			"",
+			"<open files>",
+			"",
+			"<open files>",
+			"",
+			"/home/ajay/intern-ws/nvthreads-master/apps/pagerank/singlethreaded,<open folders>,/home/ajay/intern-ws/nvthreads-master/apps,*.txt",
+			"/home/ajay/intern-ws/nvthreads-master/apps/pagerank/singlethreaded,<open folders>,/home/ajay/intern-ws/nvthreads-master/apps",
+			"/home/ajay/intern-ws/nvthreads-master/apps/pagerank/singlethreaded,<open folders>",
+			"/home/ajay/intern-ws/nvthreads-master/apps/pagerank/singlethreaded",
+			"",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"@J",
+			"\n#",
+			"_heapid",
+			"xglobals _globals",
+			"xmemory::",
+			"ajfixaddr",
+			"xmemory::",
+			"_tr",
+			"SourceHeap",
+			"xheap",
+			"xpersist",
+			"Heap",
+			"xmemory::",
+			"nvrecovery::",
+			"nvrecovery:",
+			"nvrecovery::",
+			"xmemory::",
+			"_start",
+			"xpersist.h",
+			"struct pageDependence",
+			"pageDependence",
+			"nvreco",
+			"nvrec",
+			"xpersist(",
+			"xpersist",
+			"xpersist::",
+			"xpersist::ini",
+			"ajfix",
+			"_transientMemory",
+			"checkan",
+			"ajfixaddr",
+			"MemoryLog",
+			"memory log",
+			"localMemoryLog",
+			"OpenMemoryLog",
+			"setNVID",
+			"crash",
+			"initialize",
+			"nvid",
+			"Failed to make persistent file",
+			"crash",
+			"nvlibcrash",
+			"crashed",
+			"ajprintf",
+			"setStart",
+			"setPageSta",
+			"_transientMemory",
+			"Creating loo",
+			"Creating",
+			"creating",
+			"creating lookup",
+			"creating loo",
+			"read",
+			"DEBUG",
+			"NVLOGGING",
+			"NVID",
+			"MAP_FIXED",
+			"isCrashed",
+			"step",
+			"class LittleHeap",
+			"myLittleHeap",
+			"LittleHeap",
+			"myLittleHeap",
+			"free(",
+			"nvmalloc",
+			"nvrecover",
+			"__tm_atomic",
+			"tm_callable",
+			"free",
+			"getHeap",
+			"gm",
+			"bool_t",
+			"key_t",
+			"_node_",
+			"_mtx_",
+			"CoarseGrainedSynchroList",
+			"lkey_t",
+			"nvrecover",
+			"nvrecover_aj",
+			"nvrecover",
+			"nvrecover_aj",
+			"nvrecover",
+			"node_count",
+			"typeof",
+			"recoveredVarmap",
+			"POBJ_LIST_NEXT",
+			"recoveredVarmap",
+			"nvrecover-ed",
+			"SEGV_MAPERR",
+			"MAP_ACC",
+			"createSharedMapFile",
+			"open",
+			"mmap",
+			"Type",
+			"_transientMemory",
+			"MAP_FIXED",
+			"mmap",
+			"dict",
+			"SuperHeap",
+			"_pheap",
+			"TheHeapType",
+			"_heap",
+			"MAP_FIXED",
+			"recover",
+			"map error with addr",
+			"installSignalHandler",
+			"segvHandle",
+			"map error with addr",
+			"installSignalHandler",
+			"segvHandle",
+			"map error",
+			"_pheap",
+			"mutex",
+			"PROT_WRITE",
+			"PROT",
+			"PROT_WRITE",
+			"nvmalloc",
+			"mmap",
+			"touch_size",
+			"malloc",
+			"nvmalloc",
+			"list_new",
+			"nvmalloc",
+			"catcher",
+			"touch_size",
+			"openvarmap",
+			"isCrashed",
+			"log_dest"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"probe",
+			"bool",
+			"node_key_t",
+			"node",
+			"mtx",
+			"key_t",
+			"table_size",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/home/ajay/intern-ws/nvthreads-master/tests/recover"
+		},
+		{
+			"path": "/home/ajay/intern-ws/nvthreads-master/src"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 413.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

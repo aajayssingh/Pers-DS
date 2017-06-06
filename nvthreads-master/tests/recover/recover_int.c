@@ -85,13 +85,13 @@ int main(){
     pthread_t tid1;
     
     
-    printf("Checking crash status\n");
+    printf("CHECKING CRASH STATUS...\n");
     if ( isCrashed() ) {
-        printf("I need to recover!\n");
+        printf("I NEED TO RECOVER!\n");
         
         void *ptr = malloc(sizeof(int));
         nvrecover(ptr, sizeof(int), (char *)"c", 0);
-        printf("Recovered c = %d with add %p\n", *(int*)ptr, (int*)ptr);
+        printf("RECOVERED c = %d WITH ADD %p\n", *(int*)ptr, (int*)ptr);
 
         free(ptr);
 
@@ -119,13 +119,13 @@ int main(){
         //free(ptr);
     }
     else{    
-        printf("Program did not crash before, continue normal execution.\n");
+        printf("PROGRAM DIDNOT CRASH BEFORE, CONTINUE NORMAL EXECUTION.\n");
         pthread_create(&tid1, NULL, t, NULL);
         
-        //pthread_mutex_lock(&gm);
+        pthread_mutex_lock(&gm);
         int *c = (int *)nvmalloc(sizeof(int), (char *)"c");
         *c = 12345;
-        printf("c: %d add %p\n", *c, c);
+        printf("c: %d ADD %p\n", *c, c);
        
 
         // struct list *nd = (struct list *)nvmalloc(sizeof(struct list), (char *)"z");
@@ -148,21 +148,21 @@ int main(){
         // printf("nd->sentinel_id: %d\n", nd->sentinel_id); 
         // printf("nd->head->id: %d\n", nd->head->id);
 
-        //pthread_mutex_unlock(&gm);
+        pthread_mutex_unlock(&gm);
         //free(c); //to check how free works.
         //c = NULL;
         //printf("c: %d\n", *c);
         
-        printf("finish writing to values\n");
+        printf("FINISH WRITING TO VALUES\n");
         nvcheckpoint();
 
         pthread_join(tid1, NULL);
         printf("c: %d\n", *c);
-        printf("internally abort!\n");
+        printf("INTERNALLY ABORT!\n");
         abort(); 
     }
 
-    printf("-------------main exits-------------------\n");
+    printf("-------------MAIN EXITS-------------------\n");
     return 0;
 }
 #endif

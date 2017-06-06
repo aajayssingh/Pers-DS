@@ -34,16 +34,30 @@
     #define TRACE(_fmt, ...)
 #endif
 
-#ifdef DEBUG
-    #define DEBUG(...) fprintf(stderr, "%20s:%-4d: ", __FILE__, __LINE__); fprintf(stderr, __VA_ARGS__); fprintf(stderr, "\n")
-#else
+// #ifdef DEBUG
+//     #define DEBUG(...) fprintf(stderr, "%20s:%-4d: ", __FILE__, __LINE__); fprintf(stderr, __VA_ARGS__); fprintf(stderr, "\n")
+// #else
     #define DEBUG(_fmt, ...)
-#endif
+//#endif
 
 #ifdef CHECK_SCHEDULE
   #define PRINT_SCHEDULE(...) fprintf(stderr, __VA_ARGS__); fprintf(stderr, "\n")
 #else
   #define PRINT_SCHEDULE(_fmt, ...)
 #endif
+
+#define ajprintf(...) \
+    do{\
+        if ( LDEBUG ) {\
+            char str_line[15];\
+            char str_pid[15];\
+            sprintf(str_pid, "%d", getpid());\
+            sprintf(str_line, "%d", __LINE__);\
+            fprintf(stderr, "\t|%15s | %5s | %25s | %5s | ", __FILENAME__, str_line, __FUNCTION__, str_pid);\
+            fprintf(stderr, __VA_ARGS__);\
+            printf("\n");\
+            fflush(stderr);\
+        }\
+    }while (0)\
 
 #endif

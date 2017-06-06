@@ -194,6 +194,7 @@ class xpersist {
     _isProtected = false;
 
     DEBUG("xpersist intialize: transient = %p, persistent = %p, size = %x", _transientMemory, _persistentMemory, size());
+    lprintf("xpersist intialize: transient = %p, persistent = %p, size = %x\n", _transientMemory, _persistentMemory, size());
 
     // We are trying to use page's version number to speedup the commit phase.
     _persistentVersions = (volatile unsigned long*)mmap(NULL,
@@ -237,11 +238,12 @@ class xpersist {
                                                 PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
 #endif
 
-    lprintf("initialized xpersist, dirtyListPages: %p, is_Heap: %d\n", &_dirtiedPagesList, _isHeap);
+    lprintf("\ninitialized xpersist, dirtyListPages: %p, is_Heap: %d\n", &_dirtiedPagesList, _isHeap);
   }
 
   void initialize() {
     // A string of one bits.
+    lprintf("initializing xpersist");
     allones = _mm_setzero_si128();
     allones = _mm_cmpeq_epi32(allones, allones);
 
@@ -1247,6 +1249,9 @@ class xpersist {
 
       TRACE("%d: commits local modification to shared mapping, xact %d, pageNo %d\n", getpid(), _trans, pageNo);
 
+      //write ajfixaddr
+      // localMemoryLog->setajfixaddr((unsigned long*)_transientMemory);//@J
+      // lprintf("set ajfixaddr: %p", _transientMemory);
       lprintf("commits local modification to shared mapping, xact %d, pageNo %d, pageAddr: %p\n", _trans, pageNo,pageinfo->pageStart);
 
 #ifdef LAZY_COMMIT

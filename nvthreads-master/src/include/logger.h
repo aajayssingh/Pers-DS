@@ -48,9 +48,23 @@ Place, Suite 330, Boston, MA 02111-1307 USA
 //#define DIFF_LOGGING
 #define ADDRBYTE sizeof(void*)
 #define NVLOGGING
-#define LDEBUG 0
+#define LDEBUG 1
 #define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 #define lprintf(...) \
+    do{\
+        if ( LDEBUG ) {\
+            char str_line[15];\
+            char str_pid[15];\
+            sprintf(str_pid, "%d", getpid());\
+            sprintf(str_line, "%d", __LINE__);\
+            fprintf(stderr, "\t|%15s | %5s | %25s | %5s | ", __FILENAME__, str_line, __FUNCTION__, str_pid);\
+            fprintf(stderr, __VA_ARGS__);\
+            printf("\n\n");\
+            fflush(stderr);\
+        }\
+    }while (0)\
+
+#define ajprintf(...) \
     do{\
         if ( LDEBUG ) {\
             char str_line[15];\
@@ -64,6 +78,7 @@ Place, Suite 330, Boston, MA 02111-1307 USA
     }while (0)\
 
 const char eol_symbol[] = "EOL";
+//unsigned long ajfixaddr;
 
 class LogDefines {
  public:
@@ -113,6 +128,9 @@ class LogEntry {
 
 #define MAX_PID 32768
 
+extern unsigned long ajadd;
+
+
 /* Class for logging memory operations */
 class MemoryLog {
  public:
@@ -122,6 +140,7 @@ class MemoryLog {
 
   int nvid;
   int threadID;
+  //void* ajfixaddr;
 
   /* For memory pages logging */
   int _mempages_fd;
@@ -188,6 +207,12 @@ class MemoryLog {
   void setNVID(int _nvid) {
     nvid = _nvid;
   }
+
+  //@J
+/*  void setajfixaddr(unsigned long* _ajfixaddr) {
+    ajfixaddr = _ajfixaddr;
+    lprintf("ajfix address: %p", ajfixaddr);
+  }*/
 
   static bool isCommentStmt(char* stmt) {
     if (strncmp(stmt, "#", strlen("#")) == 0) {

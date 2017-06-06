@@ -56,6 +56,7 @@ Place, Suite 330, Boston, MA 02111-1307 USA
 
 #include "logger.h"
 #include "nvrecovery.h"
+#include "aj.h"
 
 #if defined(__GNUG__)
 void initialize() __attribute__((constructor(101)));
@@ -74,6 +75,30 @@ static int stats_fd;
 static char stats_filename[FILENAME_MAX]; 
 static int metadata_fd;
 static char metadata_filename[FILENAME_MAX];
+
+
+int FetchBaseAdd::a ;
+volatile void* FetchBaseAdd::baseaddr;
+
+void FetchBaseAdd::set(int v)
+{
+    FetchBaseAdd::a = v;
+}
+
+int FetchBaseAdd::get()
+{
+    return FetchBaseAdd::a ;
+}
+
+void FetchBaseAdd::setaddr(void* v)
+{
+    FetchBaseAdd::baseaddr = v;
+}
+
+void* FetchBaseAdd::getaddr()
+{
+    return (void*)FetchBaseAdd::baseaddr ;
+}
 
 void metadata_init(void){
     // Initialize global metadata

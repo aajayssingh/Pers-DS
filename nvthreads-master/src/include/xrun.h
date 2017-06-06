@@ -107,6 +107,7 @@ public:
     /// @brief Initialize the system.
     static void initialize(void) {
         DEBUG("initializing xrun");
+        ajprintf("initializing xrun");
         
         _initialized = false;
         _protection_enabled = false;

@@ -35,6 +35,8 @@
 #include "xdefines.h"
 #include "xplock.h"
 #include "debug.h"
+#include "aj.h"
+
 
 template<unsigned long Size>
 class xheap: public xpersist<char, Size> {
@@ -78,7 +80,20 @@ public:
     *_remaining = parent::size();
     *_magic = 0xCAFEBABE;
 
+    static int aj =1000;
+    FetchBaseAdd::set(aj);
+    FetchBaseAdd::setaddr((void*)_start);
+
+
     DEBUG("xheap initializing: _position %p, _remaining %p, _magic %p, _start %p, _end %p\n", _position, _remaining, _magic, _start, _end);
+    ajprintf("xheap initializing: _position %p, _remaining %p, _magic %p, _start %p, _end %p\n", _position, _remaining, _magic, _start, _end);
+  
+  }
+
+//@J
+  void* fetchbase()
+  {
+    return (void*) _start;
   }
 
   inline void * getend() {
@@ -136,11 +151,15 @@ public:
   }
 
   void initialize() {
+
+    ajprintf("initializing xheap");
 #ifdef DETERM_MEMORY_ALLOC
     pthread_mutex_init(_mutex, NULL);
 #endif
     parent::initialize();
   }
+
+
 
   /// @brief Call this before every transaction begins.
   void begin(bool cleanup) {

@@ -58,6 +58,7 @@ Place, Suite 330, Boston, MA 02111-1307 USA
 #include <time.h>
 
 #include "logger.h"
+#include "aj.h"
 
 #define PATH_CONFIG "/tmp/nvthread.config"
 
@@ -97,6 +98,9 @@ struct pageDependence {
     unsigned long threadID; 
 };
 
+
+
+
 /* varmap = variable mapping, variable name <-> metadata
  * struct for log entry to be appended to the end of per-thread MemoryLog */
 struct varmap_entry {
@@ -105,6 +109,7 @@ struct varmap_entry {
     int pageNo;
     int pageOffset;
 };
+
 
 class nvrecovery 
 {
@@ -115,6 +120,7 @@ public:
     }
 
     int nvid;
+
     int nvlib_linenum;
     char nvlib_crash[FILENAME_MAX];
     char logPath[FILENAME_MAX];
@@ -373,7 +379,13 @@ public:
             // Generate a new NVID
             nvid = rand();
             lprintf("%s did not crash in previous execution\n", exe);
-            fprintf(fp, "%s, %d\n", exe, nvid);
+            
+            int a = FetchBaseAdd::get();
+            lprintf("LALA1 ;%d\n", a);//@J
+            void* ajaddr =  FetchBaseAdd::getaddr();
+            lprintf("LALA2 ;%p\n", ajaddr);//@J
+
+            fprintf(fp, "%s, %d %p\n", exe, nvid, ajaddr);
             line = -1;
         }
         fclose(fp);
